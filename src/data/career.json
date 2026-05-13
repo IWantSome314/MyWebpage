@@ -5,7 +5,7 @@
     "period": "Oct 2025 - Present",
     "type": "Full time job",
     "description": "I lead the architectural strategy and development of our enterprise Linux environment, specializing in the design of scalable, automated infrastructures. My role focuses on the long-term roadmapping of system evolution, utilizing SaltStack to develop 'Infrastructure as Code' workflows that standardize and secure our global footprint. By bridging the gap between high-level architecture and the technical rigors of HPC and VMware Aria operations, I transform complex operational requirements into resilient, automated frameworks that ensure peak performance and future-proof stability.",
-    "skills": ["Leading", "Collaboration"]
+    "skills": ["Linux System Administration(Ubuntu, Rocky)", "Azure", "Containers", "HPC", "Data Center", "vCenter", "Aria suite", "Salt Stack", "Collaboration", "Leading", "Architecture"]
   },
   {
     "company": "Edinburgh Napier University",

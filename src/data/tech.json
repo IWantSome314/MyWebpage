@@ -19,7 +19,8 @@
     {
       "title": "Tools",
       "skills": [
-        { "name": "Visual Studio Code", "level": 2, "icon": "devicon:vscode"}
+        { "name": "Visual Studio Code", "level": 2, "icon": "devicon:vscode"},
+        { "name": "Git", "level": 2, "icon": "devicon:git-wordmark"}
       ]
     },
     {
@@ -27,7 +28,8 @@
       "skills": [
         { "name": "vSphere", "level": 2, "icon": "devicon:vsphere-wordmark" },
         { "name": "Proxmox", "level": 2, "icon": "devicon:proxmox-wordmark" },
-        { "name": "IPAM", "level": 2, "icon": "devicon:netbox"} 
+        { "name": "IPAM", "level": 2, "icon": "devicon:netbox"},
+        { "name": "Firewall", "level": 2, "icon": "devicon:firebase"}
       ]
     }
   ]
