@@ -1,0 +1,17 @@
+[
+  {
+    "period": "2027 - 2028",
+    "title": "LPIC-101",
+    "category": "Linux",
+    "description": "Linux Cert.",
+    "skills": ["Open Source", "Documentation","Community"]
+  },
+  {
+    "period": "2023 - 2023",
+    "title": "AZ900",
+    "category": "Cloud",
+    "description": "Azure fundamentals",
+    "skills": ["Azure"]
+  }
+
+]

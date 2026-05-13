@@ -28,11 +28,16 @@ const navItems: NavItem[] = [
     href: "#tech",
     icon: `mdi:code-tags`,
   },
-  // {
-  //   label: "Education",
-  //   href: "#contact",
-  //   icon: `mdi:message`,
-  // },
+    {
+    label: "Goals",
+    href: "#goals",
+    icon: `mdi:target`,
+  },
+  //{
+   //  label: "Education",
+    // href: "#contact",
+    // icon: `mdi:message`,
+  //},
   {
     label: "Contact",
     href: "#contact",
@@ -47,11 +52,11 @@ const navItems: NavItem[] = [
 <div class="flex justify-center w-full">
   <nav
     id="main-nav"
-    class="fixed left-1/2 -translate-x-1/2 z-20 border-[1.2px] border-transparent transition-all duration-500 ease-in-out md:top-6 md:bottom-auto bottom-0 w-[80%]"
+    class="fixed left-1/2 -translate-x-1/2 z-100 border-[2.2px] border-transparent transition-all duration-500 ease-in-out md:top-6 md:bottom-auto bottom-0 w-[90%]"
   >
     <div class="container mx-auto flex justify-center items-center p-3 reveal-content" style="animation-delay: 700ms;">
       <ul
-        class="flex w-full justify-between md:space-x-6 md:justify-center md:gap-12 gap-1"
+        class="flex w-full justify-between md:space-x-10 md:justify-center md:gap-0 gap-0"
       >
         {
           navItems.map((item) => (
@@ -60,7 +65,7 @@ const navItems: NavItem[] = [
                 href={item.href}
                 class="flex flex-col items-center gap-1 text-accent transition-colors text-xs md:text-base relative group"
               >
-                <div class="absolute -left-6 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full transition-all duration-300 scale-0 opacity-0 nav-indicator hidden md:block" />
+                <div class="absolute -left-100 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full transition-all duration-300 scale-0 opacity-0 nav-indicator hidden md:block" />
                 <span class="md:hidden flex items-center justify-center w-6 h-6">
                   <Icon 
                     name={item.icon} 
@@ -101,7 +106,7 @@ const navItems: NavItem[] = [
       backdrop-filter 0.4s ease,
       border-radius 0.4s ease,
       border-color 0.4s ease,
-      width 0.4s ease;
+      width 0.8s ease;
   }
 
    nav.scrolling {
