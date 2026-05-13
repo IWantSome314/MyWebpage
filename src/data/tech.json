@@ -12,8 +12,22 @@
       "title": "Automation",
       "skills": [
         { "name": "Salt Stack", "level": 2, "icon": "vscode-icons:file-type-saltstack" },
-        { "name": "Actions", "level": 1, "icon": "skill-icons:github-dark" },
-        { "name": "vCentre", "level": 2, "icon": "devicon:sequelize" }
+        { "name": "Actions", "level": 1, "icon": "devicon:githubactions-wordmark" }
+        
+      ]
+    },
+    {
+      "title": "Tools",
+      "skills": [
+        { "name": "Visual Studio Code", "level": 2, "icon": "devicon:vscode"}
+      ]
+    },
+    {
+      "title": "Infrastructure",
+      "skills": [
+        { "name": "vSphere", "level": 2, "icon": "devicon:vsphere-wordmark" },
+        { "name": "Proxmox", "level": 2, "icon": "devicon:proxmox-wordmark" },
+        { "name": "IPAM", "level": 2, "icon": "devicon:netbox"} 
       ]
     }
   ]
