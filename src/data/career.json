@@ -1,26 +1,26 @@
 [
   {
-    "company": "Demo Company",
-    "role": "Lead Software Engineer",
+    "company": "Edinburgh Napier University",
+    "role": "Data Infrastructure Engineer",
     "period": "Oct 2025 - Present",
     "type": "Full time job",
-    "description": "Leading cross-platform mobile development using Flutter and FastAPI. Focused on scalable system design and high-performance data processing.",
+    "description": "I lead the architectural strategy and development of our enterprise Linux environment, specializing in the design of scalable, automated infrastructures. My role focuses on the long-term roadmapping of system evolution, utilizing SaltStack to develop 'Infrastructure as Code' workflows that standardize and secure our global footprint. By bridging the gap between high-level architecture and the technical rigors of HPC and VMware Aria operations, I transform complex operational requirements into resilient, automated frameworks that ensure peak performance and future-proof stability.",
     "skills": ["Leading", "Collaboration"]
   },
   {
-    "company": "Demo Company",
-    "role": "Full-stack Developer",
-    "period": "Sep 2023 - Sep 2025",
+    "company": "Edinburgh Napier University",
+    "role": "Assistant Data Infrastructure Engineer",
+    "period": "Aug 2024 - Oct 2025",
     "type": "Full time job",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["React", "Node.js", "PostgreSQL", "Docker"]
+    "description": "A core technical role focused on the resilience, security, and optimization of the University’s enterprise-level IT infrastructure. This position bridges the gap between physical hardware management and cloud-based services, requiring a high degree of technical versatility across Linux, Windows, and Virtualization platforms.",
+    "skills": ["Linux System Administration(Ubuntu, Rocky)", "Azure", "Containers", "HPC", "Data Center", "vCenter", "Aria suite", "Salt Stack"]
   },
   {
-    "company": "Demo University of Tech",
-    "role": "BSc in Computer Science",
-    "period": "Jun 2020 - Jun 2024",
-    "type": "Student",
-    "description": "Specializing in Business Research Methods and Strategic HRM. Applying analytical frameworks to human capital management.",
-    "skills": ["C++", "OOP", "Problem Solving"]
+    "company": "Edinburgh Napier University",
+    "role": "IS Modern Apprentice",
+    "period": "Sep 2022 - Aug 2024",
+    "type": "Full time job",
+    "description": "I completed a comprehensive two-year Modern Apprenticeship, transitioning from user-facing support to back-end infrastructure and high-performance computing. This rotation-based program provided a full-stack understanding of enterprise IT environments. It allowed me to create a concrete foundation into all alreas of IT",
+    "skills": ["Linux System Administration(CentOS, Redhat, Rocky, Ubuntu)", "Azure", "User interaction", "HPC", "Data center", "vCenter", "bash", "python", "Salt Stack"]
   }
 ]

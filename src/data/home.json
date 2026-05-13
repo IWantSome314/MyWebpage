@@ -1,22 +1,21 @@
 {
-  "name": "John Doe",
+  "name": "Hamish Hunter",
   "photoUrl": "favicon.svg",
-  "intro": "A brief, compelling introduction about who you are and what you do. Mention your core philosophy, your passion for building digital products, and your drive for creating efficient, high-impact solutions.",
-  "introHtml": "A brief, compelling introduction about who you are and what you do. Mention your core <span class='text-white font-bold'>philosophy</span>, your passion for building digital products, and your drive for creating <span class='text-white font-bold'>efficient</span>, <span class='text-white font-bold'>high-impact</span> solutions.",
-  "webpageTitle": "John Doe",
-  "resumeUrl": "https://example-files.online-convert.com/document/pdf/example.pdf",
+  "intro": "I am a Data infrastructure engineer. I manage the complex balance of keeping a Supercomputer (HPC) operational while architecting the broader Linux infrastructure that keeps the business running. My role is as much about strategy and roadmapping as it is about execution. I oversee everything from large-scale monitoring and incident response to ensuring the deep security of our systems. I’m heavily involved in the VMware/Aria and Broadcom ecosystem, using SaltStack to drive the automation that makes our scale manageable. I enjoy sharing my knowledge and helping others get comfortable with complex tools when I’m the subject matter expert on a project. I thrive under the pressure of diverse responsibilities and am always looking to master new architectures to keep our systems resilient and moving forward.",
+  "introHtml": "I manage the complex balance of keeping a Supercomputer (HPC) operational while architecting the broader Linux infrastructure that keeps the business running. My role is as much about strategy and roadmapping as it is about execution. I oversee everything from large-scale monitoring and incident response to ensuring the deep security of our systems. I’m heavily involved in the VMware/Aria and Broadcom ecosystem, using SaltStack to drive the automation that makes our scale manageable. I enjoy sharing my knowledge and helping others get comfortable with complex tools when I’m the subject matter expert on a project. I thrive under the pressure of diverse responsibilities and am always looking to master new architectures to keep our systems resilient and moving forward.",
+  "webpageTitle": "Hamish hunter",
 
   "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
   "socials": [
     {
       "name": "GitHub",
-      "url": "https://github.com/[YOUR_USER_NAME]",
+      "url": "https://github.com/IWantSome314",
       "icon": "mdi:github",
       "showInContact": true
     },
     {
       "name": "LinkedIn",
-      "url": "https://linkedin.com/in/[YOUR_USER_NAME]",
+      "url": "https://linkedin.com/in/hamish-hunter-76b88721b/",
       "icon": "mdi:linkedin",
       "showInContact": true
     },
@@ -34,7 +33,7 @@
     },
     {
       "name": "Email",
-      "url": "mailto:your-mail@example.com",
+      "url": "mailto:hhamish84@gmail.com",
       "icon": "mdi:email",
       "showInContact": true
     },
@@ -42,7 +41,7 @@
       "name": "Whatsapp",
       "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
       "icon": "mdi:whatsapp",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Facebook",
@@ -54,7 +53,7 @@
       "name": "Messenger",
       "url": "#",
       "icon": "mdi:facebook-messenger",
-      "showInContact": true
+      "showInContact": false
     },
     {
       "name": "Instagram",
