@@ -1,11 +1,11 @@
 [
   {
-    "title": "Awesome Website",
+    "title": "k3s",
     "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
     "images": ["astro-01.webp", "astro-02.jpeg"],
     "tech": ["Astro", "Tailwind"],
     "platforms": ["web"],
-    "link": "https://astro.build/themes/details/career-portfolio-data-driven-astro-ssg/",
+    "link": "/k3s",
     "category": "Published Website"
   },
   {
