@@ -1,0 +1,7 @@
+{
+  "name": "k3s cluster",
+  "photoUrl": "favicon.svg",
+  "intro": "k8s and containers are the forward in the world of IT and infrastructure and is an area im lacking in and want to expand my knowledge on. Its always best to learn a new technology from the ground up so I thought starting with something like k3s would be good. I will be using my proxmox server to host the cluster with 1 control plane and 2 worker nodes",
+  "introHtml": "I manage the complex balance of keeping a Supercomputer (HPC) operational while architecting the broader Linux infrastructure that keeps the business running. My role is as much about strategy and roadmapping as it is about execution. I oversee everything from large-scale monitoring and incident response to ensuring the deep security of our systems. I’m heavily involved in the VMware/Aria and Broadcom ecosystem, using SaltStack to drive the automation that makes our scale manageable. I enjoy sharing my knowledge and helping others get comfortable with complex tools when I’m the subject matter expert on a project. I thrive under the pressure of diverse responsibilities and am always looking to master new architectures to keep our systems resilient and moving forward.",
+  "webpageTitle": "K3s cluster"
+}

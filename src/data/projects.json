@@ -1,7 +1,7 @@
 [
   {
     "title": "k3s",
-    "description": "A high-performance, SEO-optimized web application built with modern frameworks to showcase technical expertise.",
+    "description": "Learning to build a kubernetes environment to develop my skills in containers and kubernetes",
     "images": ["astro-01.webp", "astro-02.jpeg"],
     "tech": ["Astro", "Tailwind"],
     "platforms": ["web"],

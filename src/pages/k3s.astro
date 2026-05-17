@@ -1,33 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Nav from "../components/nav.astro";
-import localData from '../data/home.json';
+import ProjectNav from "../components/projects/k3s/project-nav.astro";
+import K3sContent from "../components/projects/k3s/home.astro";
+import Buildingvms from "../components/projects/k3s/buildingvms.astro";
 
-interface ProfileData {
-  webpageTitle: string;
-}
+const webpageTitle = "k3s Cluster Project"
 
-const isApiLive = import.meta.env.PROD; // Auto true in production
-const BASE_URL = import.meta.env.PUBLIC_API_BASE_URL;
-
-let data: ProfileData; // data as ProfileData
-
-if (isApiLive && BASE_URL) {
-  try {
-    const response = await fetch(`${BASE_URL}/home`);
-    if (!response.ok) throw new Error('Network response was not ok');
-    data = await response.json();
-  } catch (error) {
-    console.error("API Fetch failed, falling back to mock data", error);
-    data = localData as ProfileData;
-  }
-} else {
-  data = localData as ProfileData;
-}
-
-const { webpageTitle } = data;
 ---
 
 <Layout title={webpageTitle}>
-  	<Nav />
+  <K3sContent />
+  <ProjectNav />
+  <Buildingvms />
 </Layout>

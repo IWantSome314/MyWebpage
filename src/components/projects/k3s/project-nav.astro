@@ -1,6 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
-import ThemeToggle from './theme-toggle.astro';
+import ThemeToggle from '../../theme-toggle.astro';
 interface NavItem {
   label: string;
   href: string;
@@ -10,40 +10,15 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    label: "Home",
+    label: "Intro",
     href: "#home",
     icon: `mdi:home`,
   },
   {
-    label: "Career",
-    href: "#career",
-    icon: `mdi:work`,
+    label: "",
+    href: "#home",
+    icon: `mdi:home`,
   },
-  {
-    label: "Projects",
-    href: "#projects",
-    icon: `mdi:computer`,
-  },
-  {
-    label: "Tech",
-    href: "#tech",
-    icon: `mdi:code-tags`,
-  },
-    {
-    label: "Goals",
-    href: "#goals",
-    icon: `mdi:target`,
-  },
-  //{
-   //  label: "Education",
-    // href: "#contact",
-    // icon: `mdi:message`,
-  //},
-  {
-    label: "Contact",
-    href: "#contact",
-    icon: `mdi:message`,
-  }
 ];
 ---
 <div id="theme-toggle-wrapper" class="fixed top-4 right-4 z-50 md:top-4 md:right-4 reveal-content" style="animation-delay: 700ms;">
@@ -107,7 +82,7 @@ const navItems: NavItem[] = [
       backdrop-filter 0.4s ease,
       border-radius 0.4s ease,
       border-color 0.4s ease,
-      width 0.8s ease;
+      width 0.1s ease;
   }
 
    nav.scrolling {
@@ -158,7 +133,7 @@ const navItems: NavItem[] = [
     filter: drop-shadow(0 0 8px var(--color-maintext));
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: 76px) {
     nav {
       width: 100% !important;
       bottom: 0;
