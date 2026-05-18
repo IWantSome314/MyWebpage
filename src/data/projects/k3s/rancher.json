@@ -1,0 +1,7 @@
+{
+  "name": "Rancher",
+  "date": "18th may 2026",
+  "description" : "Rancher is a tool used for managing k8s and in this case k3s. You can manage what you need via the CLI but it would be a good project to learn how to deploy rancher as its handy to have and learn" ,
+  "introHtml": "",
+  "webpageTitle": "Rancher"
+}

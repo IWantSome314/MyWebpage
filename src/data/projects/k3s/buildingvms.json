@@ -1,7 +1,7 @@
 {
-  "name": "Building VMs and installing k3s worker nodes and control plane",
+  "name": "Setting up",
   "date": "15th may 2026",
-  "description" : "I started off by creating 3 virtual machines on rocky10. And I installed k3s using `curl -sfL https://get.k3s.io | sh -`. Then I created a salt state to target my servers with 'k3s-wrk*' which will be worker nodes. The state creates a file to determine if k3s is installed if the file is not there then the salt state will create the file install k3s then connect to the control plane" ,
+  "description" : "" ,
   "introHtml": "",
   "webpageTitle": "building VMs"
 }
