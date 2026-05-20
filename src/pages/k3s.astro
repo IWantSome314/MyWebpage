@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import ProjectNav from "../components/projects/k3s/project-nav.astro";
 import K3sContent from "../components/projects/k3s/home.astro";
 import Buildingvms from "../components/projects/k3s/buildingvms.astro";
+import Goals from "../components/projects/k3s/goals.astro";
 import Rancher from "../components/projects/k3s/rancher.astro";
 
 const webpageTitle = "k3s Cluster Project"
@@ -12,6 +13,7 @@ const webpageTitle = "k3s Cluster Project"
 <Layout title={webpageTitle}>
   <K3sContent />
   <ProjectNav />
+  <Goals />
   <Buildingvms />
   <Rancher />
 </Layout>
