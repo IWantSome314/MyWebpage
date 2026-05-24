@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectNav from "../components/projects/ansible/project-nav.astro";
+import Home from "../components/projects/ansible/home.astro";
+
+
+const webpageTitle = "k3s Cluster Project"
+
+---
+
+<Layout title={webpageTitle}>
+    <Home />
+    <ProjectNav />
+</Layout>

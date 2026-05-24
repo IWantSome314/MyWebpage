@@ -2,10 +2,19 @@
   {
     "title": "k3s",
     "description": "Learning to build a kubernetes environment to develop my skills in containers and kubernetes",
-    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "images": ["rancher.png", "k8s.png"],
     "tech": ["kubernetes", "HA", "Containers"],
     "platforms": ["web"],
     "link": "/k3s",
     "category": "k3s"
+  },
+  {
+  "title": "Ansible",
+  "description": "Learning to use ansible in my homelab enviroment",
+  "images": ["ansible.png"],
+  "tech": ["kubernetes", "HA", "Containers"],
+  "platforms": ["web"],
+  "link": "/ansible",
+  "category": "ansible"
   }
 ]
