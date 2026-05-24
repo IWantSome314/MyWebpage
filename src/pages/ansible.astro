@@ -2,13 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import ProjectNav from "../components/projects/ansible/project-nav.astro";
 import Home from "../components/projects/ansible/home.astro";
+import Goals from "../components/projects/ansible/goals.astro";
+import Settingup from "../components/projects/ansible/setting-up.astro";
+import Inventory from "../components/projects/ansible/inventory.astro";
 
 
-const webpageTitle = "k3s Cluster Project"
+
+const webpageTitle = "Ansible"
 
 ---
 
 <Layout title={webpageTitle}>
     <Home />
     <ProjectNav />
+    <Goals />
+    <Settingup />
+    <Inventory />
 </Layout>
