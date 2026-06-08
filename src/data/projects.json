@@ -19,7 +19,7 @@
   },
   {
   "title": "Salt",
-  "description": "Learning to use ansible in my homelab enviroment",
+  "description": "Setting up salt stack within my homelab to manage my servers",
   "images": ["salt-01.png", "salt-02.png"],
   "tech": ["Salt-stack", "Scripting", "Management"],
   "platforms": ["web"],
