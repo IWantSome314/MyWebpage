@@ -1,0 +1,130 @@
+---
+import localData from '../../../data/projects/salt/settingUpminions.json';
+import SettingUpminionsmd from '../../../data/projects/salt/settingUpminions.md';
+
+interface ProfileData {
+  name: string;
+  description: string;
+  date: string;
+}
+
+const isApiLive = import.meta.env.PROD; // Auto true in production
+const BASE_URL = import.meta.env.PUBLIC_API_BASE_URL;
+
+let data: ProfileData; // data as ProfileData
+
+if (isApiLive && BASE_URL) {
+  try {
+    const response = await fetch(`${BASE_URL}/SettingUpminions`);
+    if (!response.ok) throw new Error('Network response was not ok');
+    data = await response.json();
+  } catch (error) {
+    console.error("API Fetch failed, falling back to mock data", error);
+    data = localData as unknown as ProfileData;
+  }
+} else {
+  data = localData as unknown as ProfileData;
+}
+
+const { name, date, description } = data;
+---
+
+<section id="SettingUpminions" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
+
+
+  <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
+    <h1 class="text-5xl md:text-7xl font-heading text-maintext tracking-tight">
+      {name}
+    </h1>
+    <br>
+    <p 
+      class="text-gray font-body text-lg leading-relaxed" 
+      set:html={date} 
+    />
+  </div>
+
+
+    <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
+    <h1 class="text-5xl md:text-7xl font-bold text-maintext tracking-tight">
+    </h1>
+    <br>
+    <p class="text-gray font-body text-lg leading-relaxed">{description}</p>
+
+    <article class="k3s-markdown mt-8 text-left mx-auto max-w-4xl">
+      <SettingUpminionsmd />
+    </article>
+  </div>
+
+</section>
+
+<style is:global>
+  .reveal-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealIn 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  @keyframes revealIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .k3s-markdown :global(h1),
+  .k3s-markdown :global(h2),
+  .k3s-markdown :global(h3) {
+    color: var(--color-maintext);
+    font-family: var(--font-heading);
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .k3s-markdown :global(p),
+  .k3s-markdown :global(li) {
+    color: var(--color-gray);
+    line-height: 1.7;
+  }
+
+  .k3s-markdown :global(pre) {
+    border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    overflow-x: auto;
+    background: color-mix(in srgb, var(--color-background) 90%, black 10%);
+  }
+
+  .k3s-markdown :global(code) {
+    font-size: 0.9rem;
+  }
+  
+  /* profile photo floating animation */
+
+  /* When combined, the animation rule automatically merges these transforms */
+  .avatar-container {
+    animation: float 5s ease-in-out infinite alternate, wobble 7s ease-in-out infinite alternate;
+  }
+
+  .balloon-float {
+    will-change: transform;
+    animation: floating-balloon 8s ease-in-out infinite;
+  }
+
+  @keyframes floating-balloon {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    33% {
+      /* Moves up and slightly right */
+      transform: translate(3px, -8px) rotate(1deg);
+    }
+    66% {
+      /* Drifts left and stays elevated */
+      transform: translate(-3px, -4px) rotate(-1deg);
+    }
+    100% {
+      /* Returns to start */
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+</style>

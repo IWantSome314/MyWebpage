@@ -1,6 +1,6 @@
 ---
-import localData from '../../../data/projects/k3s/buildingvms.json';
-import K3sBuildContent from '../../../data/projects/k3s/k3s-build.md';
+import localData from '../../../data/projects/k8s/goals.json';
+import Goalsmd from '../../../data/projects/k8s/goals.md';
 
 interface ProfileData {
   name: string;
@@ -15,7 +15,7 @@ let data: ProfileData; // data as ProfileData
 
 if (isApiLive && BASE_URL) {
   try {
-    const response = await fetch(`${BASE_URL}/buildingvms`);
+    const response = await fetch(`${BASE_URL}/goals`);
     if (!response.ok) throw new Error('Network response was not ok');
     data = await response.json();
   } catch (error) {
@@ -29,7 +29,7 @@ if (isApiLive && BASE_URL) {
 const { name, date, description } = data;
 ---
 
-<section id="buildingvms" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
+<section id="goals" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
 
 
   <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
@@ -51,7 +51,7 @@ const { name, date, description } = data;
     <p class="text-gray font-body text-lg leading-relaxed">{description}</p>
 
     <article class="k3s-markdown mt-8 text-left mx-auto max-w-4xl">
-      <K3sBuildContent />
+      <Goalsmd />
     </article>
   </div>
 

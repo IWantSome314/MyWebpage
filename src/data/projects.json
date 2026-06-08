@@ -1,20 +1,29 @@
 [
   {
-    "title": "k3s",
+    "title": "k8s",
     "description": "Learning to build a kubernetes environment to develop my skills in containers and kubernetes",
     "images": ["rancher.png", "k8s.png"],
     "tech": ["kubernetes", "HA", "Containers"],
     "platforms": ["web"],
-    "link": "/k3s",
-    "category": "k3s"
+    "link": "/k8s",
+    "category": "k8s"
   },
   {
   "title": "Ansible",
   "description": "Learning to use ansible in my homelab enviroment",
-  "images": ["ansible.png"],
-  "tech": ["kubernetes", "HA", "Containers"],
+  "images": ["ansible.png", "ansible-02.png"],
+  "tech": ["Ansible", "Scripting", "Management"],
   "platforms": ["web"],
   "link": "/ansible",
   "category": "ansible"
+  },
+  {
+  "title": "Salt",
+  "description": "Learning to use ansible in my homelab enviroment",
+  "images": ["salt-01.png", "salt-02.png"],
+  "tech": ["Salt-stack", "Scripting", "Management"],
+  "platforms": ["web"],
+  "link": "/salt",
+  "category": "salt"
   }
 ]

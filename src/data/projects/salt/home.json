@@ -1,0 +1,7 @@
+{
+  "name": "Salt-stack",
+  "photoUrl": "favicon.svg",
+  "intro": "Salt is a management tool similar to ansible. The key difference are that in salt there is 'Minions' and 'Masters'. Salt stack can be set up with salt states that are applied to the minions from a defined master. Salt stack is my most used tool in managing Linux. This where I will ensure my servers in my homelab are consistent over time and allowing me to make global changes.",
+  "introHtml": "",
+  "webpageTitle": "Salt"
+}

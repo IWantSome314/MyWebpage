@@ -78,3 +78,5 @@ all:
         k3s-wrk-01:
         k3s-wrk-02:
 ```
+
+I have no gone through and added most of my servers. Ones that I want managed maybe Ill add the rest later depending how far I take ansible.

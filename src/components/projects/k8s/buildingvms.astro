@@ -1,20 +1,11 @@
 ---
-import { Icon } from 'astro-icon/components';
-import localData from '../../../data/projects/k3s/home.json';
-
-//Data Definitions
-interface Social {
-  name: string;
-  url: string;
-  icon: string;
-}
+import localData from '../../../data/projects/k8s/buildingvms.json';
+import K8sBuildContent from '../../../data/projects/k8s/k8s-build.md';
 
 interface ProfileData {
   name: string;
-  photoUrl: string;
-  intro: string;
-  introHtml: string;
-  socials: Social[];
+  description: string;
+  date: string;
 }
 
 const isApiLive = import.meta.env.PROD; // Auto true in production
@@ -24,7 +15,7 @@ let data: ProfileData; // data as ProfileData
 
 if (isApiLive && BASE_URL) {
   try {
-    const response = await fetch(`${BASE_URL}/home`);
+    const response = await fetch(`${BASE_URL}/buildingvms`);
     if (!response.ok) throw new Error('Network response was not ok');
     data = await response.json();
   } catch (error) {
@@ -35,27 +26,11 @@ if (isApiLive && BASE_URL) {
   data = localData as unknown as ProfileData;
 }
 
-const { name, photoUrl, intro, introHtml, socials } = data;
+const { name, date, description } = data;
 ---
 
-<section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
-  <div class="relative group mb-2 reveal-content" style="animation-delay: 100ms;">
-    <div class="balloon-float w-20 h-20 md:w-24 md:h-24 rounded-full border-2 border-accent overflow-hidden shadow-[0_0_50px_color-mix(in_srgb,var(--color-accent)_33%,transparent)]">
-      <img 
-        src={photoUrl}
-        alt={name}
-        onerror="this.onerror=null;this.src='/placeholder.jpeg';"
-        class="w-full h-full object-cover scale-110" 
-      />
-    </div>
-    <div class="balloon-float absolute -z-10 top-0 left-0 w-full h-full bg-accent rounded-full blur-[80px] opacity-20"></div>
-  </div>
+<section id="buildingvms" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
 
-    <div class="reveal-content" style="animation-delay: 200ms;">
-    <p class="font-body font-light text-gray leading-relaxed">
-      15th may 2026
-    </p>
-  </div>
 
   <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
     <h1 class="text-5xl md:text-7xl font-heading text-maintext tracking-tight">
@@ -64,11 +39,23 @@ const { name, photoUrl, intro, introHtml, socials } = data;
     <br>
     <p 
       class="text-gray font-body text-lg leading-relaxed" 
-      set:html={intro} 
+      set:html={date} 
     />
   </div>
 
 
+    <div class="px-6 sm:px-14 md:px-18 lg:px-40 max-w-360 mx-auto relative z-0 reveal-content" style="animation-delay: 300ms;">
+    <h1 class="text-5xl md:text-7xl font-bold text-maintext tracking-tight">
+    </h1>
+    <br>
+    <p class="text-gray font-body text-lg leading-relaxed">{description}</p>
+
+    <article class="k3s-markdown mt-8 text-left mx-auto max-w-4xl">
+      <K8sBuildContent />
+    </article>
+  </div>
+
+</section>
 
 <style is:global>
   .reveal-content {
@@ -82,6 +69,33 @@ const { name, photoUrl, intro, introHtml, socials } = data;
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .k3s-markdown :global(h1),
+  .k3s-markdown :global(h2),
+  .k3s-markdown :global(h3) {
+    color: var(--color-maintext);
+    font-family: var(--font-heading);
+    margin-top: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .k3s-markdown :global(p),
+  .k3s-markdown :global(li) {
+    color: var(--color-gray);
+    line-height: 1.7;
+  }
+
+  .k3s-markdown :global(pre) {
+    border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    overflow-x: auto;
+    background: color-mix(in srgb, var(--color-background) 90%, black 10%);
+  }
+
+  .k3s-markdown :global(code) {
+    font-size: 0.9rem;
   }
   
   /* profile photo floating animation */

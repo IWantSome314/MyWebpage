@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectNav from "../components/projects/salt/project-nav.astro";
+import Home from "../components/projects/salt/home.astro";
+import Goals from "../components/projects/salt/goals.astro";
+import SettingUpminions from "../components/projects/salt/settingUpminions.astro";
+
+
+const webpageTitle = "salt"
+
+---
+
+<Layout title={webpageTitle}>
+    <Home />
+    <ProjectNav />
+    <Goals />
+    <SettingUpminions />
+</Layout>

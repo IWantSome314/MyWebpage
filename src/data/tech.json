@@ -12,7 +12,8 @@
       "title": "Automation",
       "skills": [
         { "name": "Salt Stack", "level": 2, "icon": "vscode-icons:file-type-saltstack" },
-        { "name": "Actions", "level": 1, "icon": "devicon:githubactions-wordmark" }
+        { "name": "Actions", "level": 1, "icon": "devicon:githubactions-wordmark" },
+        { "name": "ansbile", "level": 1, "icon": "skill-icons:ansible" }
         
       ]
     },

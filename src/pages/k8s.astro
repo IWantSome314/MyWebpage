@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectNav from "../components/projects/k8s/project-nav.astro";
+import K8sContent from "../components/projects/k8s/home.astro";
+import Buildingvms from "../components/projects/k8s/buildingvms.astro";
+import Goals from "../components/projects/k8s/goals.astro";
+import Rancher from "../components/projects/k8s/rancher.astro";
+
+const webpageTitle = "k8s Cluster Project"
+
+---
+
+<Layout title={webpageTitle}>
+  <K8sContent />
+  <ProjectNav />
+  <Goals />
+  <Buildingvms />
+  <Rancher />
+</Layout>
